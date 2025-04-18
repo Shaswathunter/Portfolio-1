@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contact a img{
+    position: absolute;
+    
+    right: 630px;
+    margin-top: 350px;
+    
+   
+}
+.resume img{
+   box-shadow: 0px 0px 15px black;
+}
+.resume img:hover{
+    box-shadow: 0px 0px 50px green  ;
+    transition: calc(0.5s) all;
+    transform: scale(1.1);
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 5px 0;
+   
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: red;
+    font-size: 50px;
+    text-shadow:  0px 0px 3px  yellow ;
+    
+}
+h1{
+    font-size: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    /* max-width: 600px; */
+    margin: auto;
+    overflow: hidden;
+    background: fixed;
+    /* box-shadow: 0px 4px 8px black; */
+}
+.carousel img{
+    width: 70%;
+    height: 400px;
+
+}
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    
+}
+iframe{
+    box-shadow: 0px 4px 20px white;
+    
+
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+#contact{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 400px; */
+    margin-left: 200px;
+    width: 40%;
+   
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #f4a261;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s;
+}
+
+#scrollToTop:hover {
+    background: #f4a261;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode section {
+    background-color: #222;
+}
+
+body.dark-mode form input, body.dark-mode form textarea {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode form button {
+    background-color: #444;
+}
+
+body.dark-mode form button:hover {
+    background-color: #666;
+}
+nav button{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    border: 0;
+    width: 100px;
+    cursor: pointer;
+    
+
+}
+p{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+}
+.foot{
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+.foot:hover{
+    color: #39ff14;
+    text-shadow:  0px 0px 8px  #39ff14 ;
+    transition: all 0.5s;
+ 
+}
+h2:hover{
+    color: red;
+    font-size: 25px;        
+}
+h1:hover{
+    color: red;
+    text-shadow:  0px 0px 3px  yellow ;
+
+}
+p:hover{
+    color: red;
+    text-shadow:  0px 0px 3px blue  ;
+
+}
+
+.prev:hover{
+    color: red;
+}
+.next:hover{
+    color: red;
+}
+    #home :hover {
+        transform: scale(1.5) ;
+        transition: all 0.9s;
+        letter-spacing: 2px;
+        text-shadow: 4px 4px 30px #39ff14;
+        color: red;
+        color: #39ff14;
+        
+    }   
+/* Add a style for the active slide */
