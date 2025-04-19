@@ -49,7 +49,13 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 20px;
     justify-content: center;
+    
 }
 
 nav ul li {
@@ -64,6 +70,67 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
+}
+.linkedin a{
+   float: right;
+color: white;
+align-items: center;
+}
+.linkedin a img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.linkedin a img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+    box-shadow: 0px 0px 20px white;
+}
+.linkedin a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    align-items: center;
+    display: flex;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+.linkedin a:hover{
+    color: #f4a261;
+}
+.github a img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.github a img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+    box-shadow: 0px 0px 20px white;
+}
+.github a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    align-items: center;
+display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.github a:hover{
+    color: #f4a261;
+}
+
+.linkedin a:hover{
+    color: #f4a261;
 }
 
 nav ul li a:hover {
@@ -123,40 +190,21 @@ button.next {
 }
 #contact{
     display: flex;
-    margin: auto;
-    justify-content: center;
     align-items: center;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    /* max-width: 400px; */
-    margin-left: 200px;
-    width: 40%;
-   
-}
-
-#contact-form input, #contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    background: #333;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+    padding: 20px;
+    background: #222;
     color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 0px 4px 20px black;
+    border-radius: 10px;
+    width:76%;
+ 
+    margin: 0 auto;
+    transition: all 0.5s;
 }
 
-#contact-form button:hover {
-    background: #f4a261;
-}
 
 #scrollToTop {
     position: fixed;
@@ -167,8 +215,9 @@ button.next {
     border: none;
     padding: 10px;
     cursor: pointer;
-    display: none;
+    display: none
     transition: background 0.3s;
+    
 }
 
 #scrollToTop:hover {
@@ -259,3 +308,137 @@ p:hover{
         
     }   
 /* Add a style for the active slide */
+
+/* Contact & Resume Section Flex Layout */
+#contact-resume-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 60px auto 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Resume Styling */
+
+.resume img {
+    /* width: 180px; */
+    border-radius: 8px;
+    /* margin-bottom: 18px; */
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.resume img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 40px #39ff14;
+}
+
+
+/* Contact Form Styling */
+#contact-form {
+    background: #222;
+    padding: 32px 28px 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: box-shadow 0.4s;
+}
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border: 1.5px solid #39ff14;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #181818;
+    color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    resize: none;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #f4a261;
+    box-shadow: 0 0 8px #39ff14;
+}
+#contact-form button {
+    background: #39ff14;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, letter-spacing 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px #2224;
+}
+#contact-form button:hover {
+    background: #222;
+    color: #39ff14;
+    letter-spacing: 2px;
+    box-shadow: 0 0 18px #39ff14;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* Contact Form Animation on Hover */
+#contact-form:hover {
+    box-shadow: 0 0 32px #39ff14;
+    transform: translateY(-6px) scale(1.02);
+    transition: box-shadow 0.4s, transform 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #contact-resume-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .resume, #contact-form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* Scroll to Top Button: Top-Left Position & Hover */
+#scrollToTop {
+    float: right;
+margin-right: 50px;
+       
+    background: #222;
+    color: #39ff14;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+   
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 2px 8px #2224;
+}
+
+#scrollToTop:hover {
+    background: #39ff14;
+    color: #222;
+    box-shadow: 0 0 18px #39ff14;
+    transform: scale(1.08) rotate(-2deg);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.carousel iframe:hover{
+    box-shadow: 0 0px 30px #39ff14;
+    transform: translateY(-6px) scale(1.02);
+    transition: box-shadow 0.4s, transform 0.4s;
+    background: #222;
+    color: #39ff14;
+   
+}
