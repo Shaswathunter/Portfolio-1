@@ -435,10 +435,7 @@ margin-right: 50px;
 }
 
 .carousel iframe:hover{
-    box-shadow: 0 0px 30px #39ff14;
+    box-shadow: 0px 0px 32px #39ff14;
     transform: translateY(-6px) scale(1.02);
     transition: box-shadow 0.4s, transform 0.4s;
-    background: #222;
-    color: #39ff14;
-   
 }
