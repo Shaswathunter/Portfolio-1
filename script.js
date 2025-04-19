@@ -129,3 +129,21 @@ prevButton.addEventListener('click', () => {
 });
 
 
+
+// Listen for form submission and save all submissions
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Get existing submissions or initialize as empty array
+    let submissions = JSON.parse(localStorage.getItem("contactFormSubmissions")) || [];
+    submissions.push({ name, email, message, date: new Date().toISOString() });
+
+    localStorage.setItem("contactFormSubmissions", JSON.stringify(submissions));
+});
+
+// Example: Function to get all submissions
+function getAllContactFormSubmissions() {
+    return JSON.parse(localStorage.getItem("contactFormSubmissions")) || [];
+}
